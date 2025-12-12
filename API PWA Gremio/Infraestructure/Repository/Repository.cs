@@ -67,7 +67,7 @@ namespace PWA_GREMIO_API.Infraestructure.Repository
             try
             {
                 // Asigna el resultado de la consulta a la variable entity
-                entity = await  _dbSet.FirstOrDefaultAsync();
+                entity = await  _dbSet.FirstOrDefaultAsync(id);
             }
             catch (Exception ex)
             {
